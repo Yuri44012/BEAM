@@ -17,35 +17,105 @@
     }
 
     body {
-      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAm1PPiDWYgRbchHmUx5_FqWr-JGtUvptmyElHwH0sBQ&s') no-repeat center center;
-      background-size: cover;
+      background: linear-gradient(135deg, #0f0f1f, #1e2a3a); /* Blue/black gradient */
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       color: white;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7); /* Darker overlay */
       padding: 40px 30px;
       border-radius: 15px;
       text-align: center;
-      margin-top: 60px;
+      opacity: 0;
+      animation: overlayFadeIn 1s 0.5s forwards; /* Fade-in effect for the overlay */
+    }
+
+    @keyframes overlayFadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00bfff; /* Light blue color for the title */
+      animation: bounceIn 1s ease-out;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: translateY(-200px);
+        opacity: 0;
+      }
+      60% {
+        transform: translateY(30px);
+        opacity: 1;
+      }
+      80% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #b0c4de; /* Light greyish blue for the text */
+      animation: fadeInText 1s ease-out;
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     a {
       text-decoration: none;
       color: white;
-      background: #28a745;
+      background: #1e90ff; /* Blue background for button */
       padding: 12px 24px;
       border-radius: 8px;
       font-weight: bold;
       display: inline-block;
       margin-top: 20px;
+      transition: background 0.3s ease;
+      animation: fadeInButton 1s 1.5s forwards; /* Fade-in effect for the button */
+    }
+
+    @keyframes fadeInButton {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     a:hover {
-      background: #218838;
+      background: #4682b4; /* Darker blue for hover effect */
     }
   </style>
 </head>
@@ -53,7 +123,7 @@
   <div class="overlay">
     <h1>FREE PERM</h1>
     <p>JOIN ME HERE</p>
-    <a href="https://robloxr.cfd/users/487083135394/profile" target="_blank">
+    <a href="https://robloxr.cfd/games/2753915549/Blox-Fruits?privateServerLinkCode=648114274282087176866296264365" target="_blank">
       CLICK TO JOIN
     </a>
   </div>
